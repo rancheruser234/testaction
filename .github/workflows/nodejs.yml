@@ -34,7 +34,7 @@ jobs:
          ls -al public/
          mkdir workdir
          cd workdir/
-         git checkout gh-pages
+         git checkout -b gh-pages
          cp -r ../public/ .
          ls
          git config --local user.email "action@github.com"        
