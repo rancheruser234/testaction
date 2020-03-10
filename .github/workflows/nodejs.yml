@@ -32,4 +32,14 @@ jobs:
          pwd
          ls
          ls -al public/
+         mkdir workdir
+         cd workdir/
+         git checkout gh-pages
+         cp -r ../public/ .
+         ls
+         git config --local user.email "action@github.com"        
+         git config --local user.name "GitHub Action"
+         git add .
+         git commit -m "latest update"
+         git push
          
