@@ -35,5 +35,7 @@ jobs:
          mkdir workdir
          cd workdir/
          git remote -v
+         git fetch
+         
 
          
