@@ -31,5 +31,5 @@ jobs:
     - run: |
          pwd
          ls
-         ls -al 
+         ls -al public/
          
