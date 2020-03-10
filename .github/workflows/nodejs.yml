@@ -40,6 +40,9 @@ jobs:
          git branch -a
          git checkout --track origin/gh-pages
          ls -al
+         git pull
+         ls -al
+         
          
          
 
