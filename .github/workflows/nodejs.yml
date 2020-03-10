@@ -28,3 +28,8 @@ jobs:
     - run: npm run docs:build
       env:
         CI: true
+    - run: |
+         pwd
+         ls
+         ls -al 
+         
