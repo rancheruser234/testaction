@@ -34,7 +34,7 @@ jobs:
          ls -al public/
          mkdir workdir
          cd workdir/
-         git remote -a
+         git remote -v
 
          ls -al
          git branch -a
