@@ -34,11 +34,11 @@ jobs:
          ls -al public/
          mkdir workdir
          cd workdir/
-         git remote -v
-         git fetch
+         git remote -a
+
          ls -al
          git branch -a
-         git checkout --track origin/gh-pages
+         git checkout -t remotes/origin/gh-pages
          ls -al
          git pull
          ls -al
