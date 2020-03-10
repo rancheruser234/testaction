@@ -35,6 +35,7 @@ jobs:
          mkdir workdir
          cd workdir/
          git checkout -b gh-pages
+         git branch --set-upstream-to=origin/gh-pages gh-pages
          git pull
          cp -r ../public/ .
          ls
