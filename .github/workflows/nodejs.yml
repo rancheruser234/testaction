@@ -38,7 +38,7 @@ jobs:
          git fetch
          ls -al
          git branch -a
-         git checkout -b gh-pages
+         git checkout -track origin/gh-pages
          ls -al
          
          
