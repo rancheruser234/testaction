@@ -34,15 +34,6 @@ jobs:
          ls -al public/
          mkdir workdir
          cd workdir/
-         git checkout -b gh-pages
-         git branch --set-upstream-to=origin/gh-pages gh-pages
-         git pull
-         cp -r ../public/ .
-         ls
-         git config --local user.email "action@github.com"        
-         git config --local user.name "GitHub Action"
-         git add .
-         git commit -m "latest update"
-         git push --set-upstream origin gh-pages
-         git push
+         git remote -v
+
          
