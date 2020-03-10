@@ -39,7 +39,7 @@ jobs:
          cd testaction
          git status
          ls -al
-         cp -r ../public/ .
+         cp -r ../../public/ .
          git status
          git add .
          git commit -m "update docs"
