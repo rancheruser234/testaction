@@ -40,6 +40,9 @@ jobs:
          git status
          ls -al
          cp -r ../../public/ .
+         git config --local user.email "action@github.com"        
+         git config --local user.name "GitHub Action"
+
          git status
          git add .
          git commit -m "update docs"
