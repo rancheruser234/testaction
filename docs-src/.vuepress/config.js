@@ -1,7 +1,7 @@
 module.exports = {
   title: 'Test action',
-  dest: 'public/',
-  base: '/testaction/',   
+  dest: 'MVI1/',
+  base: '/testaction/MVI1/',   
   plugins: ['vuepress-plugin-export'], 
   themeConfig: {
     nav: [
