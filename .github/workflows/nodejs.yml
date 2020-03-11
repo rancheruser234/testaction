@@ -57,6 +57,10 @@ jobs:
         cd source
         pwd
         npm run docs:build
+        ls
+        cd ..
+        pwd
+        ls
 
         
 
