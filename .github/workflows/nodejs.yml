@@ -32,6 +32,8 @@ jobs:
          git status
          git remote -v
          git branch -a
+         git fetch -a
+         git branch -a
          pwd
          ls
          ls -al MVI1/
