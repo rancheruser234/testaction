@@ -20,6 +20,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+      with:
+        path: source
     - run: |
         git fetch --no-tags --prune --depth=1 origin +refs/heads/*:refs/remotes/origin/*
     - name: Use Node.js ${{ matrix.node-version }}
@@ -30,19 +32,16 @@ jobs:
     - run: npm run docs:build
       env:
         CI: true
+        
+    - uses: actions/checkout@v2
+      with:
+        ref: gh-pages 
+        path: dest
+
     - run: |
-         git status
-         git remote -v
-         git branch -a
-         git fetch -a
-         git branch -a
-         git checkout -t remotes/origin/gh-pages
-         git status
-         pwd
-         ls
-         cd ..
-         pwd
-         ls
+        pwd
+        ls
+
          
 
          
