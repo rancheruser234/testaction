@@ -45,20 +45,19 @@ jobs:
         ls
 
 
-
-    - run: |
-        cd source
-        pwd
-        git fetch --no-tags --prune --depth=1 origin +refs/heads/*:refs/remotes/origin/*
-
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - run: npm install
-    - run: npm run docs:build
-      env:
-        CI: true
+    - run: |
+        cd source
+        pwd
+        npm install
+    - run:  |
+        cd source
+        pwd
+        npm run docs:build
+
         
 
          
