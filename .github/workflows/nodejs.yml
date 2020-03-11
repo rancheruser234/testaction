@@ -27,9 +27,14 @@ jobs:
         pwd
         ls
         cd source
+        pwd
+        ls
         
     - run: |
+        cd source
+        pwd
         git fetch --no-tags --prune --depth=1 origin +refs/heads/*:refs/remotes/origin/*
+
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
@@ -45,6 +50,9 @@ jobs:
         path: dest
 
     - run: |
+        pwd
+        ls
+        cd dest
         pwd
         ls
 
