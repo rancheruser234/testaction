@@ -29,7 +29,23 @@ jobs:
         cd source
         pwd
         ls
-        
+
+
+
+    - uses: actions/checkout@v2
+      with:
+        ref: gh-pages 
+        path: dest
+
+    - run: |
+        pwd
+        ls
+        cd dest
+        pwd
+        ls
+
+
+
     - run: |
         cd source
         pwd
@@ -44,17 +60,6 @@ jobs:
       env:
         CI: true
         
-    - uses: actions/checkout@v2
-      with:
-        ref: gh-pages 
-        path: dest
-
-    - run: |
-        pwd
-        ls
-        cd dest
-        pwd
-        ls
 
          
 
