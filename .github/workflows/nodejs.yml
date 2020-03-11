@@ -35,7 +35,7 @@ jobs:
          ls -al public/
          mkdir workdir
          cd workdir/
-         git clone -b gh-pages https://github.com/gabrielmcg/testaction.git
+         git clone -b gh-pages https://x-access-token:$MYTOKEN@github.com/gabrielmcg/testaction.git
          cd testaction
          git status
          ls -al
@@ -47,6 +47,8 @@ jobs:
          git add .
          git commit -m "update docs"
          git push
+      env:
+        MYTOKEN: ${{ secrets.GITHUB_ACCESS_TOKEN }}  
          
 
          
