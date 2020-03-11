@@ -38,6 +38,10 @@ jobs:
          git status
          pwd
          ls
+         cd ..
+         pwd
+         ls
+         
 
          
 
