@@ -30,6 +30,8 @@ jobs:
         CI: true
     - run: |
          git status
+         git remote -v
+         git branch -a
          pwd
          ls
          ls -al MVI1/
