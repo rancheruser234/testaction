@@ -65,7 +65,7 @@ jobs:
         
     - run: |
         pwd
-        cp -Rf source/MVI1/ dest/
+        cp -Rf MVI1/ dest/
         cd dest
         pwd
         ls
