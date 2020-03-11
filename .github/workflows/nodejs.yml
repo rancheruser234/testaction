@@ -34,25 +34,11 @@ jobs:
          git branch -a
          git fetch -a
          git branch -a
+         git checkout -t remotes/origin/gh-pages
+         git status
          pwd
          ls
-         ls -al MVI1/
-         mkdir workdir
-         cd workdir/
-         git clone -b gh-pages https://x-access-token:$MYTOKEN@github.com/gabrielmcg/testaction.git
-         cd testaction
-         git status
-         ls -al
-         cp -r ../../MVI1/ .
-         git config --local user.email "action@github.com"        
-         git config --local user.name "GitHub Action"
 
-         git status
-         git add .
-         git commit -m "update docs"
-         git push
-      env:
-        MYTOKEN: ${{ secrets.GITHUB_ACCESS_TOKEN }}  
          
 
          
