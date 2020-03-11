@@ -1,6 +1,6 @@
 module.exports = {
   title: 'Test action',
-  dest: 'MVI1/',
+  dest: '../MVI1/',
   base: '/testaction/MVI1/',   
   plugins: ['vuepress-plugin-export'], 
   themeConfig: {
